@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
           <img 
             src="/lovable-uploads/ec18ddeb-de1e-400e-afbe-f861a5aa628a.png" 
             alt="Crown Construction & Interiors" 
-            className="h-10 md:h-12"
+            className="h-8 sm:h-10 md:h-12 object-contain max-w-[180px] sm:max-w-[220px] md:max-w-[250px]"
           />
         </Link>
 
