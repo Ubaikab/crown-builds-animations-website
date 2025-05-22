@@ -46,10 +46,13 @@ const Navbar: React.FC = () => {
             <img 
               src="/lovable-uploads/ec18ddeb-de1e-400e-afbe-f861a5aa628a.png" 
               alt="Crown Construction & Interiors" 
-              className="h-9 sm:h-11 md:h-14 object-contain max-w-[200px] sm:max-w-[240px] md:max-w-[280px] drop-shadow-md"
+              className="h-9 sm:h-11 md:h-14 object-contain max-w-[200px] sm:max-w-[240px] md:max-w-[280px] drop-shadow-lg mix-blend-multiply"
               style={{ 
-                filter: scrolled ? 'brightness(0.9) contrast(1.1)' : 'brightness(1) contrast(1)', 
-                transition: 'filter 0.3s ease-in-out' 
+                filter: scrolled 
+                  ? 'brightness(0.9) contrast(1.1)' 
+                  : 'brightness(1) contrast(1)', 
+                transition: 'filter 0.3s ease-in-out',
+                backgroundColor: 'transparent'
               }}
             />
             {!scrolled && (
