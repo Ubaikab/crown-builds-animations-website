@@ -42,11 +42,20 @@ const Navbar: React.FC = () => {
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center">
-          <img 
-            src="/lovable-uploads/ec18ddeb-de1e-400e-afbe-f861a5aa628a.png" 
-            alt="Crown Construction & Interiors" 
-            className="h-8 sm:h-10 md:h-12 object-contain max-w-[180px] sm:max-w-[220px] md:max-w-[250px]"
-          />
+          <div className="relative">
+            <img 
+              src="/lovable-uploads/ec18ddeb-de1e-400e-afbe-f861a5aa628a.png" 
+              alt="Crown Construction & Interiors" 
+              className="h-9 sm:h-11 md:h-14 object-contain max-w-[200px] sm:max-w-[240px] md:max-w-[280px] drop-shadow-md"
+              style={{ 
+                filter: scrolled ? 'brightness(0.9) contrast(1.1)' : 'brightness(1) contrast(1)', 
+                transition: 'filter 0.3s ease-in-out' 
+              }}
+            />
+            {!scrolled && (
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent animate-pulse-subtle pointer-events-none"></div>
+            )}
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
